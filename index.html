@@ -461,7 +461,7 @@
       width: 100%;
       transform: translateY(22px) !important;
       margin-top: 54vh;
-      padding-bottom: 20px;
+      padding-bottom: 80px;
     }
 
     .message-wrap.show {
@@ -510,6 +510,13 @@
     .gifts {
       grid-template-columns: 1fr;
       gap: 12px;
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    .gifts.show {
+      max-height: 2200px;
+      opacity: 1;
     }
 
     .gift {
